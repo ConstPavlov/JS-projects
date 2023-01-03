@@ -1,0 +1,211 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,500;0,700;1,300&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #000
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+/* Header style start */
+.header{
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+.header-wrapper{
+    width: 1324px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+.header__logo{
+    width: 300px;
+    height: 300px;
+    margin-right: 100px;
+}
+.input__and__button{
+    width: 620px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input{
+    width: 500px;
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    color: black;
+    background-color: antiquewhite;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 20px;
+}
+.input:hover, .input:active, .input:focus {
+    background-color: rgb(157, 114, 58);
+}
+.input::placeholder{
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    
+}
+.input:active::placeholder, .input:hover::placeholder{
+    color: dimgray;
+}
+.button{
+    font-size: 24px;
+    font-weight: 700;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background-color: antiquewhite; 
+}
+.button:hover, .button:active, .button:focus{
+    cursor: pointer;
+    background-color: rgb(157, 114, 58);
+}
+/* Header style end */
+
+/* Main style start */
+
+.content{
+
+}
+.content__title{
+    color: #ffff;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 20px;
+    text-align: center;
+    white-space: nowrap;
+    margin-bottom: 50px;
+}
+.results{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 500px);
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.card{
+    display: inline-block;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgb(37, 78, 182)
+}
+.img__card{
+    margin-bottom: 30px;
+}
+.card__content{
+    position: relative;
+    z-index: 1;
+}
+
+.card__title{
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 14px;
+    color: #ffff;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.card__desc{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 10px;
+    color: rgb(191, 178, 178);
+    margin-bottom: 7px;
+    text-align: end;
+}
+.card__params{
+    padding-left: 20px;
+    color: #ffff;
+    margin-bottom: 15px;
+}
+.card label{
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    color: yellow;
+
+}
+.card__footer{
+    display: flex;
+    justify-content: space-between;
+}
+.star{
+    width: 50px;
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+    top: 100px;
+}
+.star:hover, .star:focus, .star:active{
+    opacity: 60%;
+    background-color: rgb(166, 25, 25);
+}
+
+/* Header style end */

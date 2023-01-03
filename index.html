@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Досуг-фильтр</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="header__logo">
+                <a href="https://vk.com/existenc61skaya" class="logo-link">
+                    <img src="./img/dosug-filtr-logo.jpg" alt="dosug filter logo">
+                </a>
+            </div>
+            <div class="input__and__button">
+                <input id="search-input" class="input" type="text" placeholder="Искать интересующий контент">
+                <button id="search-button" class="button">Поиск</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="content">
+                <h2 class="content__title">Результаты поиска</h2>
+                <div id="results" class="results"></div>
+        </section>
+    </main>
+    
+    <script src="./data.js" ></script>
+    <script src="./index.js"></script>
+</body>
+</html>
